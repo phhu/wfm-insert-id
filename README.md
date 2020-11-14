@@ -1,1 +1,3 @@
 # wfm-insert-id
+
+javascript:void%20function(){var%20n=window.top.frames.mctnt.frames.oRightPaneContent;try{var%20t=n.popupManager.oOpenedWindows.POPUP_WorkPatternSelection_1;console.log(t),t%26%26t.jQuery(%22tr.tblRow%22).each(function(n,t){var%20r=jQuery(t).find(%22td%22)[0];/uidspan/.test(r.innerHTML)||(r.innerHTML=%22%3Cspan%20id='uidspan'%3E%22+jQuery(t).attr(%22uid%22)+%22%20|%3C/span%3E%20%22+r.innerHTML)})}catch(r){console.error(%22couldn't%20sort%20popup%22,r)}var%20e=n.workPatternList_table,o=window.prompt(%22IDs%20to%20insert%3F%20(comma%20delimited,%20e.g.%201,2,34,52)%22);o%26%26o.split(%22,%22).map(function(n){return%20parseInt(n.trim())}).filter(function(n){return%20n||0===n}).forEach(function(n){e.appendRow(n,[%22%22+n])})}();
